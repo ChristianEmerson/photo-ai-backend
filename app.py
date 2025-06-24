@@ -20,6 +20,7 @@ def remove_bg():
 def home():
     return 'Background Remover is live!'
 
+# 🔥 THIS IS CRUCIAL:
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # ← THIS LINE IS IMPORTANT
+    port = int(os.environ.get('PORT', 10000))  # RENDER assigns this env variable
     app.run(host='0.0.0.0', port=port)
